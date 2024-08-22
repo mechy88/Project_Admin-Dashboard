@@ -1,0 +1,74 @@
+html {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    height: 100%;
+}
+
+div {
+    /* border: 2px solid black; */
+}
+
+.container {
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 1fr 6fr;
+}
+
+.header {
+    background-color: red;
+    grid-column: 2 / -1;
+    grid-row: 1 / 1;
+
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 13fr 17fr;
+}
+
+.info {
+    background-color: salmon;
+}
+
+.greet {
+    background-color: coral;
+}
+
+.sidebar {
+    background-color: #1a92d4;
+    grid-column: 1 / 1;
+    grid-row: 1 / -1;
+    
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.content{
+    background-color: purple;
+    grid-column: 2 / -1;
+    grid-row: 2 / -1;
+
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+}
+
+.projects{
+    background-color: brown;
+}
+
+.announcements{
+    background-color: chartreuse;
+}
+
+.side-option {
+    border: 1px solid black;
+    height: 50px;
+    padding: 5px;
+}
+
+.side {
+    background-color: white;
+}
